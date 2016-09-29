@@ -1,0 +1,31 @@
+//vendor (npm installed assets, etc.)
+//TODO find a good way to import these as
+//modules from node_modules
+//
+//current config in gulpfile.js
+@import "bourbon";
+@import "susy";
+
+//imported manually atm :(
+@import "normalize.scss";
+
+// settings
+@import 'settings/susy';
+@import 'settings/variables';
+
+// tools (mixins, functions, etc.)
+@import 'tools';
+
+// base
+@import 'base';
+
+//@import 'grid';
+
+// objects
+@import 'objects/button';
+
+// components
+
+// layouts
+
+// utilities (trumps)

@@ -1,0 +1,31 @@
+//////////////////////////////////////////
+//
+//  BASE STYLES
+//
+//////////////////////////////////////////
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $color-white;
+    color: $color-ral-primary-charcoal;
+    font-size: $app-font-size;
+    line-height: $app-line-height;
+}
+
+//temp until template styles are
+//worked out
+.app {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em;
+    text-align: center;
+}

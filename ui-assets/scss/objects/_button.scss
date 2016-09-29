@@ -1,0 +1,49 @@
+.o-button {
+    padding: em(6) em(18);
+    background-color: $color-ral-accent-light-gray;
+    border: 1px solid darken($color-ral-accent-light-gray, 10);
+    color: $color-ral-primary-charcoal;
+    transition: all $transition-duration $transition-curve;
+
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+    }
+
+    &.disabled,
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .65;
+    }
+}
+
+.o-button--primary {
+    background-color: blue;
+    border-color: darken(blue, 10);
+}
+
+.o-button--secondary {
+    background-color: gray;
+    border-color: darken(gray, 10);
+}
+
+.o-button--info {
+    background-color: cornflowerblue;
+    border-color: darken(cornflowerblue, 10);
+}
+
+.o-button--success {
+    background-color: green;
+    border-color: darken(green, 10);
+}
+
+.o-button--warning {
+    background-color: yellow;
+    border-color: darken(yellow, 10);
+}
+
+.o-button--danger {
+    background-color: red;
+    border-color: darken(red, 10);
+}

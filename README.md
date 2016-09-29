@@ -1,2 +1,3 @@
 # strongback-css
-Boilerplate for CSS development.
+
+Boilerplate and components for CSS development.
