@@ -1,0 +1,36 @@
+{
+  "name": "strongback-css",
+  "version": "0.0.1",
+  "description": "CSS Development scaffolding and components",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fractal": "fractal start",
+    "fractal:sync": "fractal start --sync",
+    "watch:sass": "node-sass --watch --recursive ui-assets/scss/app.scss --output public/css/ --importer node_modules/node-sass-import"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redarrowlabs/strongback-css.git"
+  },
+  "author": "Red Arrow Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redarrowlabs/strongback-css/issues"
+  },
+  "homepage": "https://github.com/redarrowlabs/strongback-css#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.0.8",
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "node-sass-import": "^1.0.5",
+    "susy": "^2.2.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "node-sass": "^3.10.0",
+    "sass-module-importer": "^1.2.1"
+  }
+}
