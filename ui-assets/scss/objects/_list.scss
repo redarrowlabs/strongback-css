@@ -1,0 +1,11 @@
+.o-list {
+
+    &__item {
+        @include container();
+        padding: 1em 0;
+
+        > div {
+            @include span(4);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<div class="{{getCssClasses cssClasses}}">
+    {{#each users as |user|}}
+        <div class="o-list__item">
+            <div>{{user.name}}</div>
+            <div>
+                <!-- Address object/component? -->
+                <div>
+                    <span style="display: block">
+                        {{user.address.streetB}}</span>
+                    <span style="display: block">
+                        {{user.address.city}}, {{user.address.state}} {{user.address.zipcode}}</span>
+                    <span style="display: block">
+                        {{user.address.country}}</span>
+                </div>
+            </div>
+            <div>{{user.phone}}</div>
+            <div>{{user.company.name}}</div>
+        </div>
+    {{/each}}
+</div>
