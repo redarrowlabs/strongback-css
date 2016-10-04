@@ -21,6 +21,8 @@
   "homepage": "https://github.com/redarrowlabs/strongback-css#readme",
   "dependencies": {
     "@frctl/fractal": "^1.0.8",
+    "@frctl/handlebars": "^1.1.0",
+    "Faker": "^0.7.2",
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
