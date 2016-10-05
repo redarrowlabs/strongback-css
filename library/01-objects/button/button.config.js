@@ -2,11 +2,12 @@ module.exports = {
     title: "Button",
     status: "prototype",
     tags: ["objects", "author:ben"],
+    collated: true,
     //preview: '@preview-layout',
     context: {
         //"button-text": "Click me!",
         //"is-sparkly": true,
-        "text": "Continue",
+        "text": "Edit",
         "cssClasses": {
             "base": "o-button"
         }
@@ -39,7 +40,7 @@ module.exports = {
                 cssClasses: {
                     modifier: "info"
                 },
-                text: "Get Some Info"
+                text: "Info"
             }
         },
         {
@@ -69,7 +70,7 @@ module.exports = {
                 cssClasses: {
                     modifier: "danger"
                 },
-                text: "Don't Go That Way"
+                text: "Remove"
             }
         }
     ]

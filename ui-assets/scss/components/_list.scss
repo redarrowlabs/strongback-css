@@ -1,0 +1,16 @@
+.c-list {
+    // prototype, not intended for real world
+    &__item {
+        //@include container();
+        display: flex;
+        flex-direction: row;
+        padding: 1em 0;
+
+        > div {
+            flex-grow: 2;
+            padding: .5em;
+            //flex-basis: auto;
+            //@include span(3);
+        }
+    }
+}

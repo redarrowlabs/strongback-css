@@ -1,5 +1,4 @@
 const faker = require('faker/locale/en_US');
-console.log(faker.helpers.createCard());
 
 function createUsers() {
     var users = [];
@@ -12,12 +11,12 @@ function createUsers() {
 module.exports = {
     title: "List",
     status: "prototype",
-    tags: ['objects', 'author:ben'],
+    tags: ['objects', 'list', 'author:ben'],
     context: {
         text: faker.lorem.sentences(),
         users: createUsers(),
         cssClasses: {
-            "base": "o-list"
+            "base": "c-list"
         }
     },
     variants: [
