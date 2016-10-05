@@ -2,7 +2,8 @@ const faker = require('faker/locale/en_US');
 
 function createUsers() {
     var users = [];
-    for (var i = 0; i < 12; i++) {
+    var recordCount = 16
+    for (var i = 0; i < recordCount; i++) {
         users.push(faker.helpers.createCard());
     }
     return users;
@@ -23,6 +24,7 @@ module.exports = {
         {
             name: "inline",
             status: "prototype",
+            preview: '@preview-special-test',
             context: {
                 text: faker.lorem.sentences(),
                 cssClasses: {
