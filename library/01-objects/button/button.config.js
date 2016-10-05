@@ -1,55 +1,77 @@
 module.exports = {
     title: "Button",
     status: "prototype",
-    tags: ['objects', 'author:ben'],
+    tags: ["objects", "author:ben"],
+    collated: true,
     //preview: '@preview-layout',
     context: {
         //"button-text": "Click me!",
         //"is-sparkly": true,
-        "text": "Done"
+        "text": "Edit",
+        "cssClasses": {
+            "base": "o-button"
+        }
     },
     variants: [
-      {
-        name: "primary",
-        status: "prototype",
-        context: {
-          modifier: "primary"
+        {
+            name: "primary",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "primary"
+                },
+                text: "Do a thing"
+            }
+        },
+        {
+            name: "secondary",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "secondary"
+                },
+                text: "Or Maybe Something Else"
+            }
+        },
+        {
+            name: "info",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "info"
+                },
+                text: "Info"
+            }
+        },
+        {
+            name: "success",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "success"
+                },
+                text: "You Did It!"
+            }
+        },
+        {
+            name: "warning",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "warning"
+                },
+                text: "Careful Now"
+            }
+        },
+        {
+            name: "danger",
+            status: "prototype",
+            context: {
+                cssClasses: {
+                    modifier: "danger"
+                },
+                text: "Remove"
+            }
         }
-      },
-      {
-        name: "secondary",
-        status: "prototype",
-        context: {
-          modifier: "secondary"
-        }
-      },
-      {
-        name: "info",
-        status: "prototype",
-        context: {
-          modifier: "info"
-        }
-      },
-      {
-        name: "success",
-        status: "prototype",
-        context: {
-          modifier: "success"
-        }
-      },
-      {
-        name: "warning",
-        status: "prototype",
-        context: {
-          modifier: "warning"
-        }
-      },
-      {
-        name: "danger",
-        status: "prototype",
-        context: {
-          modifier: "danger"
-        }
-      }
     ]
 };

@@ -1,7 +1,4 @@
-{{#if modifier}}
-<button type="button" name="button" class="o-button o-button--{{modifier}}">
-{{else}}
-<button type="button" name="button" class="o-button">
-{{/if}}
+
+<button type="button" name="button" class="{{getCssClasses cssClasses}}">
     {{text}}
 </button>

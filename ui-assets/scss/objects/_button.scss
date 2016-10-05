@@ -2,7 +2,7 @@
     padding: em(6) em(18);
     background-color: $color-ral-accent-light-gray;
     border: 1px solid darken($color-ral-accent-light-gray, 10);
-    color: $color-ral-primary-charcoal;
+    color: $color-white;
     transition: all $transition-duration $transition-curve;
 
     &:active,
@@ -15,6 +15,10 @@
     &:disabled {
         cursor: not-allowed;
         opacity: .65;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 

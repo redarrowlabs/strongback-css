@@ -1,0 +1,26 @@
+<div class="{{getCssClasses cssClasses}}">
+    {{#each users as |user|}}
+        <div class="c-list__item has-actions">
+            <div>{{user.name}}</div>
+            <div>
+                <!-- Address object/component -->
+                <div class="o-address-view">
+                    <span style="display: block">
+                        {{user.address.streetB}}</span>
+                    <span style="display: block">
+                        {{user.address.city}}, {{user.address.state}} {{user.address.zipcode}}</span>
+                    <span style="display: block">
+                        {{user.address.country}}</span>
+                </div>
+            </div>
+            <div>{{user.phone}}</div>
+            <div>{{user.company.name}}</div>
+            <div>
+                <ul class="c-actions">
+                    <li>{{ render '@button' }}</li>
+                    <li>{{ render '@button--danger' }}</li>
+                </ul>
+            </div>
+        </div>
+    {{/each}}
+</div>

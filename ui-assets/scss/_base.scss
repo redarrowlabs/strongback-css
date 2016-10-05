@@ -1,9 +1,3 @@
-//////////////////////////////////////////
-//
-//  BASE STYLES
-//
-//////////////////////////////////////////
-
 html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
@@ -21,11 +15,10 @@ body {
     line-height: $app-line-height;
 }
 
-//temp until template styles are
-//worked out
+//temp until template styles are worked out
+//markup for shared render template is
+//is /library/_preview.hbs
 .app {
     margin: 0 auto;
-    max-width: 600px;
     padding: 2em;
-    text-align: center;
 }

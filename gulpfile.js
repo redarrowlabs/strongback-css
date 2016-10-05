@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 //var moduleImporter = require('sass-module-importer');
 
 // Gotta start somewhere...
-// TODO: plumber (or similar) errors to 
+// TODO: plumber (or similar) errors to
 // keep things moving
 gulp.task('sass', function() {
     gulp.src('ui-assets/scss/app.scss')
@@ -14,7 +14,7 @@ gulp.task('sass', function() {
             includePaths: [
                 require('bourbon').includePaths[0],
                 './node_modules/susy/sass',
-                './node_modules/normalize.sss/normalize.css'
+                './node_modules/normalize.css/normalize.css'
             ]
             //importer: moduleImporter()
     }))
