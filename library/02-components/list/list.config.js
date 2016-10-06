@@ -22,7 +22,7 @@ module.exports = {
     },
     variants: [
         {
-            name: "inline",
+            name: "some-variant",
             status: "prototype",
             preview: '@preview-special-test',
             context: {

@@ -1,23 +1,34 @@
-# Strongback-css
+# strongback-css
 
-Boilerplate and components for CSS development.
+Strongback-css is the combination of a collection of default SASS files and dependencies, CSS components built on top of them, that are informed by the Red Arrow Labs pattern library.
 
-TL;DR
+This package is setup to build Red Arrow apps. While extendable, using the markup and CSS as provided will result in an app that reflects the Red Arrow look and feel.  
 
-Install packages
+## Quick Start
 
 ```bash
 npm install
-```
-
-Run Fractal server
-
-```bash
 npm run fractal:sync
+gulp watch
 ```
 
-Run watch task to compile SASS
+## Usage
 
-```bash
-gulp
-```
+### Knowledge
+
+Tools:
+
+* [Fractal](http://fractal.build/guide)
+* [Bourbon](http://bourbon.io/docs/)
+* [Susy](http://susydocs.oddbird.net/en/latest/)
+
+## Install
+
+TBD
+
+## Developing
+
+* `gulp watch` to build and watch scss changes happening in `ui-assets/scss`. This will also build a development css file with sourcemaps into `dist/css` that is consumed by Fractal. Production CSS build and delivery is TBD.
+* `npm run fractal:sync` to build and run fractal instance at `http://localhost:3000`
+
+Running both simultaneously will allow changes to scss files to automatically be hot-injected into the Fractal instance.
