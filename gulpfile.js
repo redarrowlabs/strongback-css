@@ -22,6 +22,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./public/css'));
 })
 
-gulp.task('default', ['sass'], function () {
+gulp.task('watch', ['sass'], function () {
     gulp.watch('ui-assets/scss/**/*.scss', ['sass'])
 });
