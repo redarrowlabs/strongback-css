@@ -1,5 +1,5 @@
 {
-  "name": "strongback-css",
+  "name": "@redarrowlabs/strongback-css",
   "version": "0.0.1",
   "description": "CSS Development scaffolding and components",
   "main": "dist/css/app.css",
