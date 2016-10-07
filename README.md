@@ -9,7 +9,7 @@ This package is setup to build Red Arrow apps. While extendable, using the marku
 ```bash
 npm install
 npm run fractal:sync
-gulp watch
+npm run watchsass
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ TBD
 
 ## Developing
 
-* `gulp watch` to build and watch scss changes happening in `ui-assets/scss`. This will also build a development css file with sourcemaps into `dist/css` that is consumed by Fractal. Production CSS build and delivery is TBD.
+* `npm run watchsass` to build and watch scss changes happening in `ui-assets/scss`. This will also build a development css file with sourcemaps into `dist/css` that is consumed by Fractal. Production CSS build and delivery is TBD.
 * `npm run fractal:sync` to build and run fractal instance at `http://localhost:3000`
 
 Running both simultaneously will allow changes to scss files to automatically be hot-injected into the Fractal instance.
