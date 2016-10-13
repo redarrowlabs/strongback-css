@@ -4,13 +4,30 @@ $app-padding: 20px;
 $app-font-size: 100%;
 $app-line-height: 1.5;
 
+// Breakpoints
+// TODO: add breakpoints
+
+// Typography
+$font-stack-system:
+    // see:  https://bitsofco.de/the-new-system-font-stack/
+    -apple-system,          // for Safari (iOS & macOS) and Firefox macOS
+    BlinkMacSystemFont,     // for Chrome macOS
+    "Segoe UI",             // for Windows
+    Roboto,                 // for Android and Chrome OS
+    Oxygen-Sans,            // for KDE
+    Ubuntu,                 // for Ubuntu
+    Cantarell,              // for GNOME
+    "Helvetica Neue",       // for versions of macOS prior to 10.11
+    sans-serif;             // the standard fallback
+
+
 // DLSS brand colors
 $color-dlss-primary: #004a88;
 $color-dlss-secondary-01: #003a5d;
 $color-dlss-secondary-02: #006680;
 $color-dlss-secondary-03: #4c9d2f;
-$color-dlss-tertiery-01: #008476;
-$color-dlss-tertiery-02: #b5be00;
+$color-dlss-tertiary-01: #008476;
+$color-dlss-tertiary-02: #b5be00;
 $color-dlss-accent: #a8a8aa;
 $color-dlss-copy: #616265;
 

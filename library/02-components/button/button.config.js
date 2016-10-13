@@ -1,7 +1,7 @@
 module.exports = {
     title: "Button",
     status: "prototype",
-    tags: ["objects", "author:ben"],
+    tags: ["components", "author:ben"],
     collated: true,
     //preview: '@preview-layout',
     context: {
@@ -9,7 +9,7 @@ module.exports = {
         //"is-sparkly": true,
         "text": "Edit",
         "cssClasses": {
-            "base": "o-button"
+            "base": "c-button"
         }
     },
     variants: [

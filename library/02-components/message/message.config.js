@@ -3,11 +3,11 @@ const faker = require('faker/locale/en_US');
 module.exports = {
     title: "Message",
     status: "prototype",
-    tags: ['objects', 'author:ben'],
+    tags: ['components', 'author:ben'],
     context: {
         text: faker.lorem.sentences(),
         cssClasses: {
-            "base": "o-message"
+            "base": "c-message"
         }
     },
     variants: [
