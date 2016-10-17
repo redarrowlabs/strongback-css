@@ -23,7 +23,8 @@
 
 // Objects - undecorated, reusable structural patterns
 //@import 'grid';
-
+@import 'objects/list-bare';
+@import 'objects/list-inline';
 
 // Components
 @import 'components/button';
@@ -33,3 +34,4 @@
 // Themes/tests
 
 // Utilities (overrides, helpers, usually !important)
+@import 'utilities/headings';

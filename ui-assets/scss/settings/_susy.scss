@@ -1,12 +1,29 @@
 // http://susydocs.oddbird.net/en/latest/settings/
+/*
 $susy: (
-  columns: 16,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-  global-box-sizing: border-box,
-  use-custom: (
-      box-sizing: true
-  )
+columns: 16,
+gutters: 1/4,
+math: fluid,
+output: float,
+gutter-position: inside,
+global-box-sizing: border-box,
+use-custom: (
+box-sizing: true
+)
 );
+*/
+
+
+// test for fixed gutter
+$susy: (
+    math: fluid,
+    columns: 12,
+    column-width: 200px, // doesn't really matter what this is
+    gutters: 20px/200px, // as long as you get this ratio right (20px gutters, 10px each side)
+    gutter-position: inside-static,
+    global-box-sizing: border-box,
+    use-custom: (
+        box-sizing: true
+    )
+);
+

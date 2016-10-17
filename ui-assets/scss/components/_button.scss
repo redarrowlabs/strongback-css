@@ -1,9 +1,9 @@
 .c-button {
     padding: em(6) em(18);
-    background-color: $color-ral-accent-light-gray;
-    border: 1px solid darken($color-ral-accent-light-gray, 10);
-    color: $color-white;
-    transition: all $transition-duration $transition-curve;
+    background-color: #aaa;
+    border: 1px solid darken(#aaa, 10);
+    color: #fff;
+    transition: all 200ms ease;
 
     // states
     &:active,

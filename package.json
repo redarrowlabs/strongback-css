@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "fractal": "fractal start",
     "fractal:sync": "fractal start --sync",
+    "fractal:build": "fractal build",
     "watchsass": "gulp watch",
     "wip:watch:sass": "node-sass --watch --recursive ui-assets/scss/app.scss --output public/css/ --importer node_modules/node-sass-import"
   },

@@ -1,14 +1,66 @@
-// App default
-$app-max-width: 1280px;
-$app-padding: 20px;
-$app-font-size: 100%;
-$app-line-height: 1.5;
+// Variables
 
+// Table of Contents
+//
+// Colors
+// Typography
 // Breakpoints
-// TODO: add breakpoints
+// Body
+// Links
+// Components
+
+// Variable format should follow the `$component-modifier-state-property` order.
+
+
+// Colors
+
+// UI colors
+$color-ui-error: #fc4e36;
+$color-ui-error-text: darken($color-ui-error, 15%);
+
+$color-ui-success: #37b55a;
+$color-ui-success-text: darken($color-ui-success, 12%);
+
+$color-ui-warning: #fbce1e;
+$color-ui-warning-text: darken($color-ui-warning, 27%);
+
+$color-ui-info: #1ca4fa;
+$color-ui-info-text: scale_color($color-ui-info, $lightness: -25%, $hue: 1%, $saturation: 0%);
+
+// Grays
+$color-gray-100: #fafafa;
+$color-gray-300: #e6e7e8;
+$color-gray-500: #9fa5ab;
+$color-gray-700: #333d47;
+$color-gray-900: #1d252d;
+
+$color-gray-200: mix($color-gray-100, $color-gray-300);
+$color-gray-400: mix($color-gray-300, $color-gray-500);
+$color-gray-600: mix($color-gray-500, $color-gray-700);
+$color-gray-800: mix($color-gray-700, $color-gray-900);
+
+
+// Brand Colors
+$color-brand-primary: #1ca4fa;
+$color-brand-primary-100: scale_color($color-brand-primary, $lightness: 95%, $hue: 0%, $saturation: -12%);
+$color-brand-primary-200: scale_color($color-brand-primary, $lightness: 75%, $hue: 0%, $saturation: -8%);
+$color-brand-primary-300: scale_color($color-brand-primary, $lightness: 50%, $hue: 0%, $saturation: -4%);
+$color-brand-primary-400: scale_color($color-brand-primary, $lightness: 25%, $hue: 0%, $saturation: 0%);
+$color-brand-primary-500: $color-brand-primary;
+$color-brand-primary-600: scale_color($color-brand-primary, $lightness: -25%, $hue: 1%, $saturation: 0%);
+$color-brand-primary-700: scale_color($color-brand-primary, $lightness: -40%, $hue: 2%, $saturation: -20%);
+$color-brand-primary-800: scale_color($color-brand-primary, $lightness: -55%, $hue: 2.5%, $saturation: -30%);
+$color-brand-primary-900: scale_color($color-brand-primary, $lightness: -70%, $hue: 3%, $saturation: -40%);
+
+
+$color-brand-secondary: #648ca5;
+$color-brand-secondary-500: $color-brand-secondary;
+
+
+
 
 // Typography
-$font-stack-system:
+$font-family-sans-serif:
     // see:  https://bitsofco.de/the-new-system-font-stack/
     -apple-system,          // for Safari (iOS & macOS) and Firefox macOS
     BlinkMacSystemFont,     // for Chrome macOS
@@ -20,31 +72,39 @@ $font-stack-system:
     "Helvetica Neue",       // for versions of macOS prior to 10.11
     sans-serif;             // the standard fallback
 
+$font-family-serif:      Georgia, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
 
-// DLSS brand colors
-$color-dlss-primary: #004a88;
-$color-dlss-secondary-01: #003a5d;
-$color-dlss-secondary-02: #006680;
-$color-dlss-secondary-03: #4c9d2f;
-$color-dlss-tertiary-01: #008476;
-$color-dlss-tertiary-02: #b5be00;
-$color-dlss-accent: #a8a8aa;
-$color-dlss-copy: #616265;
+// Pixel value applied to html (used to scale text responsively)
+$font-size-root: 16px;
 
-// Red Arrow brand colors
-$color-ral-primary-red: #BA0C2F;
-$color-ral-primary-charcoal: #1D252D;
-$color-ral-secondary-cool-gray: #888B8D;
-$color-ral-accent-dark-gray-90: #333F48;
-$color-ral-accent-dark-gray-75: #50555a;
-$color-ral-accent-light-gray: #c8d2de;
-$color-ral-accent-blue: #2980b9;
-$color-ral-accent-teal: #16a085;
-$color-ral-accent-green: #9bbb59;
-$color-ral-accent-orange: #f39c12;
+$line-height-base: 1.5;
 
-$color-white: #fff;
-$color-black: #000;
+$font-size-base: 1rem;
+$font-size-large:   1.25rem;
+$font-size-small:   .875rem;
+$font-size-xsmall:   .75rem;
 
-$transition-duration: 200ms;
-$transition-curve: ease-out;
+$font-size-h1: 2.5rem ;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+
+
+// Breakpoints
+// TODO: Add breakpoints
+
+
+// Body
+$body-bg:    #fff;
+$body-color: #333;
+
+
+// Links
+$link-color:            $color-brand-primary-600;
+
+
+// Components

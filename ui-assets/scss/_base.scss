@@ -8,14 +8,61 @@ html {
     box-sizing: inherit;
 }
 
+html,
 body {
-    background-color: $color-white;
-    color: $color-ral-primary-charcoal;
-    font-size: $app-font-size;
-    line-height: $app-line-height;
+    height: 100%;
 }
 
-//TODO: Add bitters-like basic styles here
+html {
+    font-size: $font-size-root;
+}
+
+body {
+    background-color: $body-bg;
+    color: $body-color;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+}
+
+// headings
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+// links
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+code, kbd, pre, samp {
+    font-family: $font-family-monospace;
+}
+
+
+
+hr {
+    border-bottom: 1px solid $color-gray-200;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: 1em 0;
+}
+
+
 
 //temp until template styles are worked out
 //markup for shared render template is
