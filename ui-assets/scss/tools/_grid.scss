@@ -1,0 +1,43 @@
+// Grid mixins, flexbox based, defaults to 12 columns
+// based on...  https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+//              https://github.com/thingsym/flexbox-grid-mixins
+@mixin grid( $gutter: 0, $row-space: 0) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    // gutters
+    margin-left: -$gutter;
+
+    & > * {
+        padding-left: $gutter;
+        margin-bottom: $row-space;
+    }
+
+}
+
+@mixin grid-col($col: 'equal', $grid-columns: 12) {
+    $flex-grow: null;
+    $flex-shrink: null;
+    $flex-basis: null;
+
+
+    @if type-of($col) == number and unitless($col) == true {
+        $flex-grow: 0;
+        $flex-shrink: 0;
+        $flex-basis: percentage($col / $grid-columns);
+    }
+    @else if type-of($col) == number and unitless($col) == false {
+        $flex-grow: 0;
+        $flex-shrink: 0;
+        $flex-basis: $col;
+    }
+    @else if type-of($col) == string and $col == 'equal' {
+        $flex-grow: 1;
+        $flex-shrink: 1;
+        $flex-basis: 0;
+    }
+
+    flex: $flex-grow $flex-shrink $flex-basis;
+
+}

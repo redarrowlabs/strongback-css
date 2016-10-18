@@ -6,13 +6,13 @@
 @import "bourbon";
 @import "susy";
 
-
 // Settings (no actual css)
 @import 'settings/susy';
 @import 'settings/variables';
 
 // Tools - mixins, functions, etc. (again no css)
-@import 'tools';
+@import 'tools/mixins';
+@import 'tools/grid';
 
 // Generic - reset/normalize (imported manually atm :( )
 @import "normalize";
@@ -22,9 +22,10 @@
 
 
 // Objects - undecorated, reusable structural patterns
-//@import 'grid';
+@import "objects/layout";
 @import 'objects/list-bare';
 @import 'objects/list-inline';
+
 
 // Components
 @import 'components/button';

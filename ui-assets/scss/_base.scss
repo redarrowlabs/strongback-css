@@ -8,12 +8,10 @@ html {
     box-sizing: inherit;
 }
 
-html,
-body {
-    height: 100%;
-}
+
 
 html {
+    /*overflow-y: scroll;*/
     font-size: $font-size-root;
 }
 
@@ -64,10 +62,3 @@ hr {
 
 
 
-//temp until template styles are worked out
-//markup for shared render template is
-//is /library/_preview.hbs
-.app {
-    margin: 0 auto;
-    padding: 2em;
-}
