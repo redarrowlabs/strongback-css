@@ -12,6 +12,8 @@
     & > * {
         padding-left: $gutter;
         margin-bottom: $row-space;
+
+        flex: 1; // default, will be overriden by any grid-col settings
     }
 
 }
