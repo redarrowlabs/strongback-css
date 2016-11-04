@@ -22,6 +22,20 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./public/css'));
 })
 
+gulp.task('release', function() {
+    gulp.src('ui-assets/scss/app.scss')
+        .pipe(sass({
+            errLogToConsole: true,
+            includePaths: [
+                require('bourbon').includePaths[0],
+                './node_modules/susy/sass',
+                './node_modules/normalize.css/normalize.css'
+            ]
+            //importer: moduleImporter()
+    }))
+    .pipe(gulp.dest('./dist'));
+})
+
 gulp.task('watch', ['sass'], function () {
     gulp.watch('ui-assets/scss/**/*.scss', ['sass'])
 });
