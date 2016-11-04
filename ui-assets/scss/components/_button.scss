@@ -1,10 +1,11 @@
-.o-button {
+.c-button {
     padding: em(6) em(18);
-    background-color: $color-ral-accent-light-gray;
-    border: 1px solid darken($color-ral-accent-light-gray, 10);
-    color: $color-white;
-    transition: all $transition-duration $transition-curve;
+    background-color: #aaa;
+    border: 1px solid darken(#aaa, 10);
+    color: #fff;
+    transition: all 200ms ease;
 
+    // states
     &:active,
     &.active {
         background-image: none;
@@ -22,32 +23,33 @@
     }
 }
 
-.o-button--primary {
+// variants
+.c-button--primary {
     background-color: pink;
     border-color: darken(pink, 10);
 }
 
-.o-button--secondary {
+.c-button--secondary {
     background-color: gray;
     border-color: darken(gray, 10);
 }
 
-.o-button--info {
+.c-button--info {
     background-color: cornflowerblue;
     border-color: darken(cornflowerblue, 10);
 }
 
-.o-button--success {
+.c-button--success {
     background-color: green;
     border-color: darken(green, 10);
 }
 
-.o-button--warning {
+.c-button--warning {
     background-color: yellow;
     border-color: darken(yellow, 10);
 }
 
-.o-button--danger {
+.c-button--danger {
     background-color: red;
     border-color: darken(red, 10);
 }

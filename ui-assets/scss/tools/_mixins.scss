@@ -1,0 +1,28 @@
+@import "../settings/variables";
+
+
+// breakpoints
+// names are set in variables
+@mixin breakpoint($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+
+
+// typography
+@mixin text-display-4() {
+    font-family: $font-family-base;
+    font-size: $font-size-huge;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}

@@ -1,0 +1,10 @@
+// strip any styling or indentation of lists
+.o-list-bare {
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+    .o-list-bare__item {
+        margin-left: 0;
+    }
+}

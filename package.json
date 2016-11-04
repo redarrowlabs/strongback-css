@@ -2,13 +2,15 @@
   "name": "@redarrowlabs/strongback-css",
   "version": "0.0.1",
   "description": "CSS Development scaffolding and components",
-  "main": "dist/css/app.css",
+  "main": "dist/app.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fractal": "fractal start",
     "fractal:sync": "fractal start --sync",
+    "fractal:build": "fractal build",
     "watchsass": "gulp watch",
-    "wip:watch:sass": "node-sass --watch --recursive ui-assets/scss/app.scss --output public/css/ --importer node_modules/node-sass-import"
+    "wip:watch:sass": "node-sass --watch --recursive ui-assets/scss/app.scss --output public/css/ --importer node_modules/node-sass-import",
+    "release": "gulp release"
   },
   "repository": {
     "type": "git",

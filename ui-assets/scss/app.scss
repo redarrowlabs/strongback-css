@@ -6,28 +6,33 @@
 @import "bourbon";
 @import "susy";
 
-//imported manually atm :(
-@import "normalize.scss";
-
-// settings
+// Settings (no actual css)
 @import 'settings/susy';
 @import 'settings/variables';
 
-// tools (mixins, functions, etc.)
-@import 'tools';
+// Tools - mixins, functions, etc. (again no css)
+@import 'tools/mixins';
+@import 'tools/grid';
 
-// base
+// Generic - reset/normalize (imported manually atm :( )
+@import "normalize";
+
+// Base html element styles
 @import 'base';
 
-//@import 'grid';
 
-// objects
-@import 'objects/button';
+// Objects - undecorated, reusable structural patterns
+@import "objects/layout";
+@import 'objects/list-bare';
+@import 'objects/list-inline';
 
-// components
+
+// Components
+@import 'components/button';
 @import 'components/list';
 @import 'components/actions';
 
-// layouts
+// Themes/tests
 
-// utilities (trumps)
+// Utilities (overrides, helpers, usually !important)
+@import 'utilities/headings';
