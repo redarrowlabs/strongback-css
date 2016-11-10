@@ -7,232 +7,26 @@
 }
 
 
-// TEMPORARY TEST BED STUFF...
-
-.color1 {
-    background: $color-brand-primary-100;
-    padding: 20px;
-}
-
-.color2 {
-    background: $color-brand-primary-200;
-    padding: 20px;
-}
-
-.color3 {
-    background: $color-brand-primary-300;
-    padding: 20px;
-}
-
-.color4 {
-    background: $color-brand-primary-400;
-    padding: 20px;
-}
-
-.color5 {
-    background: $color-brand-primary-500;
-    padding: 20px;
-}
-.color6 {
-    background: $color-brand-primary-600;
-    padding: 20px;
-}
-.color7 {
-    background: $color-brand-primary-700;
-    padding: 20px;
-}
-
-.color8 {
-    background: $color-brand-primary-800;
-    padding: 20px;
-}
-
-.color9 {
-    background: $color-brand-primary-900;
-    padding: 20px;
-}
-
-
-
-
-
-// TEST FOR GRIDS...
-// TODO: make actual grid classes
-
-.test-container {
+.o-layout-record {
     @include grid();
 
-    & > * {
-        background: transparentize(lightcoral, .75);
+    &__main {
+        @include grid-col();
+        padding: $spacer;
+        background: whitesmoke; //temp
     }
 
-    .test1  {
-
-        @include grid-col($col: 6);
-        background: transparentize(red, .76);
-
-        & > .content {
-            margin: 0 auto;
-            background: transparentize(red, .88);
-        }
+    &__aside {
+        @include grid-col(12);
+        padding: $spacer;
+        background: lightblue;  //temp
 
         @include breakpoint(md) {
-            @include grid-col($col: 8);
-            background: transparentize(darkseagreen,  .66);
-        }
-    }
-
-    .test2 {
-        @include grid-col($col: 6);
-
-        & > .content {
-            padding: 40px;
-            background: transparentize(orange, .75);
-        }
-        
-        @include breakpoint(md) {
-            @include grid-col($col: 4);
-            background: transparentize(lightseagreen,  .66);
+            @include grid-col(4);
         }
 
-    }
-
-    .test3 {
-        @include grid-col($col:4);
-
-        .content {
-            background: transparentize(orangered, .75);
-        }
-    }
-
-    .test4 {
-        @include grid-col($col:5);
-        .content {
-            background: transparentize(orchid, .75);
-        }
-    }
-    .test5 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(coral, .75);
-        }
-    }
-    .test6 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(darkorange, .75);
-        }
-    }
-    .test7 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(darkorchid, .75);
-        }
-    }
-    .test8 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(lightcoral, .75);
-        }
-    }
-    .test9 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(mediumorchid, .75);
-        }
-    }
-
-
-}
-
-.inner-container {
-    @include grid($gutter: 1.5rem);
-    background: transparentize(cornflowerblue, .75);
-}
-
-.inner1 {
-    @include grid-col($col: 155px);
-    .content {
-        background: transparentize(orchid, .75);
-    }
-}
-.inner2 {
-    @include grid-col();
-    .content {
-        background: transparentize(orangered, .75);
-    }
-}
-
-
-
-
-.test-container2 {
-    @include grid($gutter: 1.5rem, $row-space: 1.5rem);
-
-    & > * {
-        background: transparentize(cornflowerblue, .75);
-    }
-
-
-    .test1  {
-        @include grid-col($col:9);
-
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-
-    .test2 {
-        @include grid-col($col:3);
-
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-
-    .test3 {
-        @include grid-col($col:4);
-
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-
-    .test4 {
-        @include grid-col($col:5);
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-    .test5 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-    .test6 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-    .test7 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-    .test8 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(cornflowerblue, .75);
-        }
-    }
-    .test9 {
-        @include grid-col($col:3);
-        .content {
-            background: transparentize(cornflowerblue, .75);
+        @include breakpoint(lg) {
+            @include grid-col(3);
         }
     }
 }
-

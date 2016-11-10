@@ -19,10 +19,16 @@
 
 
 // typography
-@mixin text-display-4() {
+@mixin text-display() {
     font-family: $font-family-base;
-    font-size: $font-size-huge;
+    font-size: $font-size-h1;
     font-weight: 300;
     line-height: 1;
     letter-spacing: -0.04em;
+}
+
+@mixin text-label() {
+    font-size: $label-font-size;
+    font-weight: 300;
+    color: $color-gray-600;
 }

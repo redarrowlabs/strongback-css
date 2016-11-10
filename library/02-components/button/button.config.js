@@ -1,13 +1,13 @@
 module.exports = {
     title: "Button",
     status: "prototype",
-    tags: ["components", "author:ben"],
+    tags: ["components", "author:abv"],
     collated: true,
     //preview: '@preview-layout',
     context: {
         //"button-text": "Click me!",
         //"is-sparkly": true,
-        "text": "Edit",
+        "text": "Standard Button",
         "cssClasses": {
             "base": "c-button"
         }
@@ -20,47 +20,17 @@ module.exports = {
                 cssClasses: {
                     modifier: "primary"
                 },
-                text: "Do a thing"
+                text: "Primary Button"
             }
         },
         {
-            name: "secondary",
+            name: "link",
             status: "prototype",
             context: {
                 cssClasses: {
-                    modifier: "secondary"
+                    modifier: "link"
                 },
-                text: "Or Maybe Something Else"
-            }
-        },
-        {
-            name: "info",
-            status: "prototype",
-            context: {
-                cssClasses: {
-                    modifier: "info"
-                },
-                text: "Info"
-            }
-        },
-        {
-            name: "success",
-            status: "prototype",
-            context: {
-                cssClasses: {
-                    modifier: "success"
-                },
-                text: "You Did It!"
-            }
-        },
-        {
-            name: "warning",
-            status: "prototype",
-            context: {
-                cssClasses: {
-                    modifier: "warning"
-                },
-                text: "Careful Now"
+                text: "Link Button"
             }
         },
         {
@@ -70,8 +40,8 @@ module.exports = {
                 cssClasses: {
                     modifier: "danger"
                 },
-                text: "Remove"
+                text: "Delete Account"
             }
-        }
+        },
     ]
 };
