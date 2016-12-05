@@ -23,6 +23,7 @@
     }
 
     &:hover {
+        position: relative;  //pops buttons above other buttons in button group
         outline: none;
         cursor: pointer;
         text-decoration: none;
@@ -30,12 +31,14 @@
     }
 
     &:focus {
+        position: relative;  //pops buttons above other buttons in button group
         outline: none;
         border-color: $color-brand-primary-500;
         box-shadow: 0 0 5px transparentize($color-brand-primary-500, .5);
     }
 
     &:active {
+        position: relative;   //pops buttons above other buttons in button group
         background-image: none;
         outline: 0;
         text-decoration: none;
@@ -87,7 +90,7 @@
 
         &:active{
             outline: 0;
-             cursor: pointer;
+            cursor: pointer;
             color: $link-color;
             border-color: transparent;
             box-shadow: none;
