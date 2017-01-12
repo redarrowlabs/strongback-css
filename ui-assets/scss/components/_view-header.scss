@@ -1,0 +1,15 @@
+// View header component
+.c-view-header {
+
+    &--variant {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        // style font as display text
+        @include text-display();
+        
+    }
+
+}

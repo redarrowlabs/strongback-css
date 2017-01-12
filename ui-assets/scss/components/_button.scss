@@ -1,55 +1,117 @@
 .c-button {
-    padding: em(6) em(18);
-    background-color: #aaa;
-    border: 1px solid darken(#aaa, 10);
-    color: #fff;
-    transition: all 200ms ease;
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: $color-gray-100;
+    border: 1px solid $color-gray-300;
+    border-radius: $button-border-radius;
+    color: $color-gray-700;
+    font-size: $font-size-base;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    transition: opacity 75ms ease,
+                background-color 75ms ease,
+                color 75ms ease,
+                border-color 75ms ease,
+                box-shadow 75ms ease;
 
     // states
-    &:active,
-    &.active {
-        background-image: none;
-        outline: 0;
-    }
-
-    &.disabled,
     &:disabled {
         cursor: not-allowed;
         opacity: .65;
     }
 
     &:hover {
+        position: relative;  //pops buttons above other buttons in button group
+        outline: none;
         cursor: pointer;
+        text-decoration: none;
+        border: 1px solid $color-gray-400;
     }
+
+    &:focus {
+        position: relative;  //pops buttons above other buttons in button group
+        outline: none;
+        border-color: $color-brand-primary-500;
+        box-shadow: 0 0 5px transparentize($color-brand-primary-500, .5);
+    }
+
+    &:active {
+        position: relative;   //pops buttons above other buttons in button group
+        background-image: none;
+        outline: 0;
+        text-decoration: none;
+        box-shadow: 0 0 5em 0 rgba(0,0,0, .025) inset,       // fill
+                    0 .1em .1em 0 rgba(0,0,0, .075) inset;       // shadow
+    }
+
+    // variants
+    &--primary {
+        background-color: $color-brand-primary;
+        border-color: $color-brand-primary;
+        color: #fff;
+
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 5em 0 rgba(0,0,0, .075) inset;       // fill
+            border-color: darken($color-brand-primary, 7.5%);
+        }
+
+
+        &:active {
+            outline: 0;
+            text-decoration: none;
+            box-shadow: 0 0 5em 0 rgba(0,0,0, .15) inset,       // fill
+                        0 .1em .1em 0 rgba(0,0,0, .15) inset;       // shadow
+            border-color: darken($color-brand-primary, 7.5%);
+        }
+
+
+    }
+
+
+    &--link {
+        background-color: transparent;
+        border-color: transparent;
+        color: $link-color;
+
+
+        &:focus,
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            color: $link-color;
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+        &:active{
+            outline: 0;
+            cursor: pointer;
+            color: $link-color;
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &--light {
+        background-color: #fff;
+    }
+
+
+    &--danger {
+        color: $color-ui-error-text;
+
+        &:focus,
+        &:hover,
+        &:active{
+            color: $color-ui-error-text;
+        }
+    }
+
 }
 
-// variants
-.c-button--primary {
-    background-color: pink;
-    border-color: darken(pink, 10);
-}
 
-.c-button--secondary {
-    background-color: gray;
-    border-color: darken(gray, 10);
-}
-
-.c-button--info {
-    background-color: cornflowerblue;
-    border-color: darken(cornflowerblue, 10);
-}
-
-.c-button--success {
-    background-color: green;
-    border-color: darken(green, 10);
-}
-
-.c-button--warning {
-    background-color: yellow;
-    border-color: darken(yellow, 10);
-}
-
-.c-button--danger {
-    background-color: red;
-    border-color: darken(red, 10);
-}

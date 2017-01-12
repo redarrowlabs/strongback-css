@@ -1,0 +1,30 @@
+// Style text like headings
+.u-text-h1 { font-size: $font-size-h1 !important; }
+.u-text-h2 { font-size: $font-size-h2 !important; }
+.u-text-h3 { font-size: $font-size-h3 !important; }
+.u-text-h4 { font-size: $font-size-h4 !important; }
+.u-text-h5 { font-size: $font-size-h5 !important; }
+.u-text-h6 { font-size: $font-size-h6 !important; }
+
+
+// Style text as monospace
+.u-text-monospace {
+    font-family: $font-family-monospace !important;
+}
+
+// Style text as display
+.u-text-title {
+    @include text-display(); // Todo:
+}
+
+// Style text as label
+.u-text-label {
+    @include text-label();
+}
+
+// Style text as body
+.u-text-body {
+    font-family: $font-family-base !important;
+    font-size: $font-size-base !important;
+    color: $body-color !important;
+}

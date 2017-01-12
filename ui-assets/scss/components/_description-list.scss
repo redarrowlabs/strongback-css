@@ -1,0 +1,30 @@
+// Description list (typically <dl> with <dt>, <dd> children
+// used for key-value pairs
+
+.c-description-list {
+
+    &--inline {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__term {
+        @include text-label();
+
+        .c-description-list--inline & {
+            $flex-grow: 0;
+            $flex-shrink: 0;
+            margin-right: 1rem;
+        }
+    }
+
+    &__description {
+        margin-left: 0;
+
+        .c-description-list--inline & {
+            flex: 1;
+            font-size: $label-font-size;
+        }
+    }
+
+}
