@@ -53,7 +53,7 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 // Set the static HTML build destination
-fractal.web.set('builder.dest', __dirname + '/dist');
+fractal.web.set('builder.dest', __dirname + '/site');
 
 // Set default preview template
 fractal.components.set('default.preview', '@preview');
